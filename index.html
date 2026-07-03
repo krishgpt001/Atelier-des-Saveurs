@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier des Saveurs — French Fine Dining</title>
+  <meta name="description" content="Atelier des Saveurs — a celebration of French culinary heritage and modern artistry in the heart of India." />
+  <meta property="og:title"       content="Atelier des Saveurs" />
+  <meta property="og:description" content="Where Culinary Art Meets Extraordinary Flavor." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="assets/images/hero.png" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <!-- Favicons -->
+  <link rel="icon" href="assets/images/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.svg" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="special-badge" id="specialBadge">
+    ✦ Tonight's Tasting Menu
+    <button id="specialBadgeClose" style="background:none;border:none;color:#000;font-weight:700;cursor:pointer;font-size:1rem;line-height:1;">×</button>
+  </div>
+
+  <nav class="navbar navbar-expand-lg custom-navbar" id="mainNavbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="assets/images/logo.png" alt="Atelier des Saveurs" />
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#about">Our Story</a></li>
+              <li><a class="dropdown-item" href="#vision">Our Vision</a></li>
+              <li><a class="dropdown-item" href="#why">Why Choose Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-reserve ms-lg-3">Reserve Table</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="hero" aria-label="Hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8 hero__content">
+          <span class="hero__eyebrow">A French Fine Dining Experience</span>
+          <h1 class="hero__title">
+            Where Culinary Art<br />
+            Meets <em>Extraordinary</em><br />
+            Flavor
+          </h1>
+          <p class="hero__subtitle">
+            Crafted with the finest ingredients, inspired by tradition,<br />
+            elevated by creativity.
+          </p>
+          <div class="d-flex flex-wrap gap-3 hero__ctas">
+            <a href="#contact" class="btn-gold">Reserve a Table</a>
+            <a href="#menu"    class="btn-outline-gold">View Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <section id="about" class="section" aria-label="About">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-left">
+          <div class="about__img-wrap">
+            <img src="assets/images/about-us.jpg" alt="The elegant interior of Atelier des Saveurs" />
+          </div>
+        </div>
+        <div class="col-lg-7 reveal-right">
+          <span class="section__eyebrow">Our Story</span>
+          <h2 class="section__title mb-3">A Passion for Excellence</h2>
+          <div class="gold-divider" style="margin: 0 0 1.8rem 0;"></div>
+          <p class="about__text mb-4">
+            Atelier des Saveurs is a celebration of French culinary heritage and modern artistry.
+            Every dish is crafted with the finest ingredients, inspired by tradition, and elevated
+            by creativity. Founded in 2009 by Chef Alexandre Dubois, our kitchen has earned its
+            reputation as one of Paris's most distinguished tables.
+          </p>
+          <p class="about__text mb-4">
+            We believe that exceptional dining is not merely about food — it is about memory,
+            about the quiet pause before the first bite, and the conversation that lingers long
+            after the meal ends.
+          </p>
+          <span class="about__signature">Chef Alexandre Dubois</span>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-4" id="vision">
+        <div class="col-md-6 reveal">
+          <div class="vision-card">
+            <div class="vision_title">
+                <div class="vision-card__icon">◎</div>
+                <div class="vision-card__title">Our Vision</div>
+            </div>
+            <p style="margin:0; font-size:1.6rem;">
+              Our vision is to become a destination where gastronomy, culture, and elegance come together in perfect harmony. 
+              We aspire to be recognized for setting new standards in fine dining, inspiring a deeper appreciation for culinary craftsmanship, 
+              and creating meaningful moments that bring people together around extraordinary food. 
+              Through innovation and dedication, we aim to leave a lasting impression on every guest who walks through our doors.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 reveal" style="transition-delay: 0.15s;">
+          <div class="vision-card">
+            <div class="vision_title">
+                <div class="vision-card__icon">✦</div>
+                <div class="vision-card__title">Our Mission</div>
+            </div>
+            <p style="margin:0; font-size:1.6rem;">
+               At Atelier des Saveurs, our mission is to create unforgettable dining experiences by combining exceptional cuisine,
+               warm hospitality, and a passion for culinary artistry. We are committed to using the finest ingredients, 
+               celebrating authentic flavors, and crafting every dish with care and creativity. 
+               Through impeccable service and a welcoming atmosphere, we strive to make every visit a memorable journey of taste and refinement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="section section--alt" aria-label="Why choose us">
+    <div class="container text-center">
+      <span class="section__eyebrow reveal">Why Choose Atelier</span>
+      <h2 class="section__title reveal">An Experience Like No Other</h2>
+      <div class="gold-divider reveal"></div>
+      <div class="row g-4 mt-3">
+
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:0.05s;">
+          <div class="why-card">
+            <div class="why-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6z"/>
+                <line x1="6" y1="17" x2="18" y2="17"/>
+              </svg>
+            </div>
+            <div class="why-card__title">Culinary Expertise</div>
+            <p class="why-card__text">Master chefs with years of experience and passion for perfection.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:0.15s;">
+          <div class="why-card">
+            <div class="why-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="why-card__title">Finest Ingredients</div>
+            <p class="why-card__text">Sourced from the best local and international producers daily.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:0.25s;">
+          <div class="why-card">
+            <div class="why-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="why-card__title">Elegant Ambience</div>
+            <p class="why-card__text">A luxurious setting designed for unforgettable moments.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal" style="transition-delay:0.35s;">
+          <div class="why-card">
+            <div class="why-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <div class="why-card__title">Impeccable Service</div>
+            <p class="why-card__text">Personalized hospitality that anticipates your every need.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="menu" class="section" aria-label="Menu highlights">
+    <div class="container text-center">
+      <span class="section__eyebrow reveal">Signature Selections</span>
+      <h2 class="section__title reveal">Our Menu</h2>
+      <div class="gold-divider reveal"></div>
+      <p class="section__subtitle reveal">A Harmony of Flavors and Artistry</p>
+
+      <div class="menu-tabs reveal" role="tablist">
+        <button class="menu-tab active" data-filter="all"      role="tab">All</button>
+        <button class="menu-tab"        data-filter="starters" role="tab">Starters</button>
+        <button class="menu-tab"        data-filter="main"     role="tab">Main Course</button>
+        <button class="menu-tab"        data-filter="desserts" role="tab">Desserts</button>
+        <button class="menu-tab"        data-filter="wines"    role="tab">Wines</button>
+      </div>
+
+      <div class="row g-4 text-start">
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.05s;">
+          <article class="menu-card" data-category="starters">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/starter1.jpg" alt="Foie Gras Kulcha Bites" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Starters</span>
+              <h3 class="menu-card__name">Foie Gras Kulcha Bites</h3>
+              <p class="menu-card__desc">Pan-seared foie gras served on miniature saffron kulcha crisps, finished with fig compote and balsamic reduction.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹1,450</span>
+                <span class="menu-card__tag">Classic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.1s;">
+          <article class="menu-card" data-category="starters">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/starter2.jpeg" alt="Truffle Malai Scallops" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Starters</span>
+              <h3 class="menu-card__name">Truffle Malai Scallops</h3>
+              <p class="menu-card__desc">Seared Atlantic scallops with truffle-infused malai sauce, microgreens, and crispy lotus root.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹1,650</span>
+                <span class="menu-card__tag">Signature</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.15s;">
+          <article class="menu-card" data-category="main">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/mainCourse1.jpeg" alt="Herb-Crusted Lamb Rack Royale" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Main Course</span>
+              <h3 class="menu-card__name">Herb-Crusted Lamb Rack Royale</h3>
+              <p class="menu-card__desc">Australian lamb rack, garlic pomme purée, rosemary jus, glazed baby vegetables.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹3,450</span>
+                <span class="menu-card__tag">Chef's Pick</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.2s;">
+          <article class="menu-card" data-category="main">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/mainCourse2.jpg" alt="Butter Poached Lobster Thermidor" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Main Course</span>
+              <h3 class="menu-card__name">Butter Poached Lobster Thermidor</h3>
+              <p class="menu-card__desc">Maine lobster finished with Gruyère cream, saffron beurre blanc, and asparagus.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹4,250</span>
+                <span class="menu-card__tag">Signature</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.25s;">
+          <article class="menu-card" data-category="main">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/mainCourse3.jpg" alt="Truffle Makhani Chicken Ballotine" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Main Course</span>
+              <h3 class="menu-card__name">Truffle Makhani Chicken Ballotine</h3>
+              <p class="menu-card__desc">Free-range chicken stuffed with mushroom duxelles, served with truffle makhani sauce and potato fondant.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹2,850</span>
+                <span class="menu-card__tag">Classic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.3s;">
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/desert1.jpg" alt="Saffron Crème Brûlée" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Desserts</span>
+              <h3 class="menu-card__name">Saffron Crème Brûlée</h3>
+              <p class="menu-card__desc">Classic French crème brûlée infused with Kashmiri saffron and cardamom.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹950</span>
+                <span class="menu-card__tag">Signature</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.35s;">
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/desert2.jpg" alt="Dark Chocolate Fondant Royale" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Desserts</span>
+              <h3 class="menu-card__name">Dark Chocolate Fondant Royale</h3>
+              <p class="menu-card__desc">Warm Valrhona chocolate fondant with vanilla bean ice cream and berry coulis.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">₹1,050</span>
+                <span class="menu-card__tag">classic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-col reveal" style="transition-delay:0.4s;">
+          <article class="menu-card" data-category="wines">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/wine.jpg" alt="Chablis Premier Cru" class="menu-card__img" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__category">Wines</span>
+              <h3 class="menu-card__name">Chablis Premier Cru</h3>
+              <p class="menu-card__desc">Elegant French Chardonnay with citrus notes, minerality, and a crisp finish.</p>
+              <div class="menu-card__footer">
+                <span class="menu-card__price">Glass ₹1,250</br>Bottle ₹7,500</span>
+                <span class="menu-card__tag">Reserve</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="gallery" class="section section--alt" aria-label="Photo gallery">
+    <div class="container text-center">
+      <span class="section__eyebrow reveal">A Glimpse of Our World</span>
+      <h2 class="section__title reveal">Our Gallery</h2>
+      <div class="gold-divider reveal"></div>
+
+      <div class="gallery-grid mt-5">
+
+        <div class="gallery-item reveal"
+            data-img="assets/images/gallery1.png"
+            data-caption="Beef Tenderloin — Truffle Jus"
+            role="button" tabindex="0" aria-label="Open: Beef Tenderloin">
+          <img src="assets/images/gallery1.png" alt="Signature beef dish with truffle jus" />
+          <div class="gallery-item__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M15 3h6m0 0v6m0-6L10 14M9 3H3v18h18v-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" style="transition-delay:0.1s;"
+            data-img="assets/images/gallery2.jpg"
+            data-caption="The Dining Room"
+            role="button" tabindex="0" aria-label="Open: The Dining Room">
+          <img src="assets/images/gallery2.jpg" alt="The elegant dining room " />
+          <div class="gallery-item__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" >
+              <path d="M15 3h6m0 0v6m0-6L10 14M9 3H3v18h18v-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" style="transition-delay:0.2s;"
+          data-img="assets/images/gallery3.png"
+            data-caption="Foie Gras de Canard"
+            role="button" tabindex="0" aria-label="Open: Foie Gras de Canard">
+          <img src="assets/images/gallery3.png" alt="Foie Gras de Canard with fig compote" />
+          <div class="gallery-item__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M15 3h6m0 0v6m0-6L10 14M9 3H3v18h18v-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" style="transition-delay:0.3s;"
+            data-img="assets/images/gallery4.jpg"
+            data-caption="wine on table"
+            role="button" tabindex="0" aria-label="Open: wine on table">
+          <img src="assets/images/gallery4.jpg" alt="wine on table" />
+          <div class="gallery-item__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M15 3h6m0 0v6m0-6L10 14M9 3H3v18h18v-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" style="transition-delay:0.4s;"
+            data-img="assets/images/gallery5.png"
+            data-caption="Crème Brûlée"
+            role="button" tabindex="0" aria-label="Open: Crème Brûlée">
+          <img src="assets/images/gallery5.png" alt="Classic Crème Brûlée" />
+          <div class="gallery-item__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+              <path d="M15 3h6m0 0v6m0-6L10 14M9 3H3v18h18v-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="modal fade gallery-modal" id="galleryModal" tabindex="-1"
+      aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3">
+          <img id="galleryModalImg" src="" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="reviews" class="section" aria-label="Guest reviews">
+    <div class="container text-center">
+      <span class="section__eyebrow reveal">What Guests Say</span>
+      <h2 class="section__title reveal">Reviews</h2>
+      <div class="gold-divider reveal"></div>
+
+      <div id="reviewCarousel" class="carousel slide mt-5 px-lg-5 reveal"
+          data-bs-ride="carousel" data-bs-interval="6000">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0"
+                  class="active" aria-current="true" aria-label="Review 1"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="3" aria-label="Review 4"></button>
+        </div>
+
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "An evening at Atelier des Saveurs is not just a meal — it is an education in
+                pleasure. The Foie Gras alone is worth crossing the city for."
+              </blockquote>
+              <div class="testimonial-card__author">Sophie Laurent</div>
+              <p class="testimonial-card__role">Food Critic, Le Monde</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "We celebrated our anniversary here and the staff made every moment magical.
+                The tasting menu was a symphony of flavors I will never forget."
+              </blockquote>
+              <div class="testimonial-card__author">Marc &amp; Isabelle Dupont</div>
+              <p class="testimonial-card__role">Regular Guests</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "Chef Dubois has an extraordinary ability to make each plate feel both timeless
+                and completely contemporary. The Beef Tenderloin was perfection."
+              </blockquote>
+              <div class="testimonial-card__author">James Whitmore</div>
+              <p class="testimonial-card__role">Michelin Guide Contributor</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★☆</div>
+              <blockquote class="testimonial-card__quote">
+                "The ambience is unlike any other in Paris — intimate yet grand. The wine list
+                is exceptional and the sommelier's pairings are always spot on."
+              </blockquote>
+              <div class="testimonial-card__author">Chloé Renard</div>
+              <p class="testimonial-card__role">Travel &amp; Lifestyle Blogger</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="prev" aria-label="Previous review">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#reviewCarousel" data-bs-slide="next" aria-label="Next review">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="section section--alt" aria-label="Contact and reservations">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section__eyebrow">Reservations &amp; Contact</span>
+        <h2 class="section__title">Reserve Your Table</h2>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="row g-5">
+
+        <div class="col-lg-5 reveal-left">
+          <div class="contact-info__item">
+            <span class="contact-info__icon">📍</span>
+            <div>
+              <span class="contact-info__label">Address</span>
+              <p class="contact-info__value">12, Golf Course Road, Sector 42</br>
+                (Near DLF Camellias)Gurugram, Haryana 122002, India
+              </p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon">📞</span>
+            <div>
+              <span class="contact-info__label">Phone</span>
+              <p class="contact-info__value">+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon">✉</span>
+            <div>
+              <span class="contact-info__label">Email</span>
+              <p class="contact-info__value">reservations@atelierdessaveurs.in</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <span class="contact-info__icon">🕐</span>
+            <div>
+              <span class="contact-info__label">Hours</span>
+              <p class="contact-info__value">
+                Monday – Thursday: 11:00 – 22:30<br />
+                Friday – Sunday: 10:00 – 23:00
+              </p>
+            </div>
+          </div>
+          <div class="map-wrap mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.450735103381!2d77.0940943!3d28.465969500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d103306027%3A0x12d4b720bfa2d071!2sF-12%201%2C%20Golf%20Course%20Rd%2C%20DLF%20Phase%201%2C%20Sector%2027%2C%20Gurugram%2C%20Haryana%20122002!5e0!3m2!1sen!2sin!4v1781599068833!5m2!1sen!2sin"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Atelier des Saveurs location" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal-right">
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">✓</div>
+            <h3 class="form-success__title">Reservation Confirmed!</h3>
+            <p class="form-success__text">
+              Thank you for choosing Atelier des Saveurs.<br />
+              We look forward to welcoming you.
+            </p>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate aria-label="Reservation form">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" class="form-control"
+                      placeholder="Your Name" autocomplete="name" required />
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control"
+                      placeholder="your@email.com" autocomplete="email" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-control"
+                      placeholder="+91 98499 98459" autocomplete="tel" />
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactGuests" class="form-label">Number of Guests *</label>
+                <input type="number" id="contactGuests" class="form-control"
+                      placeholder="2" min="1" max="20" required />
+                <div class="invalid-feedback">Please enter between 1 and 20 guests.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactDate" class="form-label">Preferred Date *</label>
+                <input type="date" id="contactDate" class="form-control" required />
+                <div class="invalid-feedback">Please select a valid future date.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="contactTime" class="form-label">Preferred Time</label>
+                <select id="contactTime" class="form-select">
+                  <option value="">Select Time</option>
+                  <option>12:00 – Lunch</option>
+                  <option>13:00 – Lunch</option>
+                  <option>14:00 – Late Lunch</option>
+                  <option>19:00 – Dinner</option>
+                  <option>20:00 – Dinner</option>
+                  <option>21:00 – Late Dinner</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Special Requests</label>
+                <textarea id="contactMessage" class="form-control" rows="4"
+                          placeholder="Dietary requirements, special occasions, seating preferences…"
+                          maxlength="500"></textarea>
+                <div class="invalid-feedback">Please write at least 10 characters.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-gold w-100"
+                        style="border:none; cursor:pointer; padding:1.1rem;">
+                  Confirm Reservation
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" id="footer" aria-label="Footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer__logo">
+            <img src="assets/images/logo.png" alt="Atelier des Saveurs" />
+          </div>
+          <p class="footer__tagline">Where culinary art meets extraordinary flavor.</p>
+          <div class="footer__social" aria-label="Social media">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TripAdvisor">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer_links_box">
+            <div class="footer__links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#menu">Menu</a>
+            </div>
+            <div class="footer__links">
+              <a href="#gallery">Gallery</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+          </div>
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer__heading">Opening Hours</h3>
+          <div class="footer__hours-row">
+            <span>Mon-Thurs</span>
+            <span style="color:var(--gold);">11:00 – 22:30</span>
+          </div>
+          <div class="footer__hours-row">
+            <span>Fri – Sun</span>
+            <span style="color:var(--gold);">10:00 – 23:00</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="footer__heading">Visit Us</h3>
+          <p class="footer__address">
+            12, Golf Course Road, Sector 42<br />
+            Near DLF Camellias<br />
+            Gurugram, Haryana 122002, India<br /><br />
+            Phone: +91 98765 43210<br />
+            Email: reservations@atelierdessaveurs.in
+          </p>
+        </div>
+      </div>
+
+      <hr class="footer__divider" />
+      <p class="footer__copy">© 2025 Atelier des Saveurs. All rights reserved. Crafted with passion in India.</p>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
